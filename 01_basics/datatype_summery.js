@@ -40,3 +40,30 @@
         const myFun = function(){
             console.log("hello world");
         }
+
+
+/* **************************************************************************** */
+
+
+// Stack  = Primitive ,  Heap = Non-Primitive
+
+let myChannel = "Deepak"
+let anotherChannel = myChannel
+
+anotherChannel = "Kumar"
+
+console.log(myChannel);
+console.log(anotherChannel);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@paytm"
+}
+
+let userTwo = userOne
+
+userTwo.email = "deepak@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
