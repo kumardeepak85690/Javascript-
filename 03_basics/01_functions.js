@@ -39,6 +39,37 @@ function loginUserMessage(username /* = "sam*/) {
 }
 
 // console.log(loginUserMessage("Deepak"))
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
 
+function calculateCartPrice(/*val1,val2,*/...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(2));
+// console.log(calculateCartPrice(200,300,400,500));
+
+
+const user = {
+    username: "Deepak",
+    password: 1234 
+}
+
+function handleObject(anyObject){
+    console.log(`username is ${anyObject.username} and password is ${anyObject.password}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "Sam",
+    password: 9876
+})
+
+const myNewArray = [200,300,400,500]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100,200,300]));
 
